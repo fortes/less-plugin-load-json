@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-load-json",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Load variables from a JSON file",
   "main": "index.js",
   "scripts": {

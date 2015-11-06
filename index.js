@@ -1,7 +1,11 @@
 var fs = require('fs'),
     path = require('path');
 
-var fileManager = {
+var FileManager = function(options) {
+  this.options = options;
+};
+
+FileManager.prototype = {
   getPath: function(resolvedFilename) {
     // TODO: What should this really be? Since there are no nested imports,
     // seems like it doesn't really matter?
@@ -54,12 +58,10 @@ var fileManager = {
 
   tryAppendExtension: function(filename, ext) {
     return filename;
-  }
-};
+  },
 
-module.exports = {
   install: function(less, pluginManager) {
-    less.environment.addFileManager(fileManager);
+    less.environment.addFileManager(new FileManager(this.options));
   },
 
   minVersion: [2, 5, 0],
@@ -72,3 +74,5 @@ module.exports = {
     console.log('TODO: Write usage docs.');
   }
 };
+
+module.exports = FileManager;

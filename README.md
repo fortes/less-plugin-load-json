@@ -21,3 +21,8 @@ body {
 ## Bugs
 
 There are likely plenty, please file some.
+
+## Changelog
+
+* **0.1.0**: Actually return a class, in order to work with webpack.
+* **0.0.1**: First version, kinda works.
