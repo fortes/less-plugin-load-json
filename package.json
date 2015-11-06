@@ -1,6 +1,6 @@
 {
   "name": "less-plugin-load-json",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Load variables from a JSON file",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
   "author": "Filipe Fortes",
   "license": "ISC",
   "dependencies": {
-    "less": "^2.5.3"
   },
   "devDependencies": {},
   "repository": {
