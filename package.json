@@ -1,0 +1,26 @@
+{
+  "name": "less-plugin-load-json",
+  "version": "0.0.1",
+  "description": "Load variables from a JSON file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"TODO: Write tests\""
+  },
+  "keywords": [
+    "less",
+    "plugin"
+  ],
+  "author": "Filipe Fortes",
+  "license": "ISC",
+  "dependencies": {
+    "less": "^2.5.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fortes/less-plugin-load-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fortes/less-plugin-load-json/issues"
+  }
+}
