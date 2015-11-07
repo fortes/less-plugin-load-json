@@ -1,10 +1,10 @@
 {
   "name": "less-plugin-load-json",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Load variables from a JSON file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"TODO: Write tests\""
+    "test": "NODE_ENV=test mocha"
   },
   "keywords": [
     "less",
@@ -12,9 +12,11 @@
   ],
   "author": "Filipe Fortes",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^2.5.3",
+    "mocha": "^2.3.3"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/fortes/less-plugin-load-json.git"

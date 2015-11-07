@@ -13,14 +13,22 @@ FileManager.prototype = {
   },
 
   loadFile: function(filename, currentDirectory, options, environment, cb) {
-    var contents = require(path.join(currentDirectory, filename)),
+    var contents,
         i,
         key,
-        keys = Object.keys(contents).filter(function(k) {
-          return contents.hasOwnProperty(k);
-        }),
+        keys,
         len,
         type;
+
+    try {
+      contents = require(path.resolve(path.join(currentDirectory, filename)));
+    } catch (err) {
+      cb(err);
+    }
+
+    keys = Object.keys(contents).filter(function(k) {
+      return contents.hasOwnProperty(k);
+    });
 
     for (i = 0, len = keys.length; i < len; i++) {
       key = keys[i];
