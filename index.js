@@ -64,6 +64,10 @@ FileManager.prototype = {
     return stat.isFile();
   },
 
+  supportsSync: function (filename, currentDirectory, options, environment) {
+    return this.supports(filename, currentDirectory, options, environment);
+  },
+
   tryAppendExtension: function(filename, ext) {
     return filename;
   },
